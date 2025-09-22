@@ -1,177 +1,217 @@
-<!DOCTYPE html>
+
+ 
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top 25 Highest Grossing Movies</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 25 Highest-Grossing Films</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+        tr:hover {
+            background-color: #bdc3c7;
+        }
+        .earnings {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>🎬 Top 25 Highest Grossing Movies 💰</h1>
-  </header>
+    <h1>Top 25 Highest-Grossing Films of All Time</h1>
 
-  <!-- Movies Grid -->
-  <section class="movie-grid">
-
-    <div class="movie-card">
-      <img src="avatar-2009.jpg" alt="Avatar">
-      <h2>Avatar (2009)</h2>
-      <p>$2.923 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="avatar-way-of-water.jpg" alt="Avatar: The Way of Water">
-      <h2>Avatar: The Way of Water (2022)</h2>
-      <p>$2.320 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="avengers-endgame.jpg" alt="Avengers: Endgame">
-      <h2>Avengers: Endgame (2019)</h2>
-      <p>$2.799 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="avengers-age-of-ultron.jpg" alt="Avengers: Age of Ultron">
-      <h2>Avengers: Age of Ultron (2015)</h2>
-      <p>$1.403 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="avengers.jpg" alt="The Avengers">
-      <h2>The Avengers (2012)</h2>
-      <p>$1.520 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="barbie.jpg" alt="Barbie">
-      <h2>Barbie (2023)</h2>
-      <p>$1.446 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="beauty-and-the-beast.jpg" alt="Beauty and the Beast">
-      <h2>Beauty and the Beast (2017)</h2>
-      <p>$1.273 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="captain-marvel.jpg" alt="Captain Marvel">
-      <h2>Captain Marvel (2019)</h2>
-      <p>$1.131 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="disney-lion-king.jpg" alt="The Lion King">
-      <h2>The Lion King (2019)</h2>
-      <p>$1.663 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="fate-of-furious.jpg" alt="The Fate of the Furious">
-      <h2>The Fate of the Furious (2017)</h2>
-      <p>$1.238 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="frozen-2019.jpg" alt="Frozen II">
-      <h2>Frozen II (2019)</h2>
-      <p>$1.453 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="furious-7.jpg" alt="Furious 7">
-      <h2>Furious 7 (2015)</h2>
-      <p>$1.515 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="harry-potter.jpg" alt="Harry Potter and the Deathly Hallows Part 2">
-      <h2>Harry Potter and the Deathly Hallows – Part 2 (2011)</h2>
-      <p>$1.342 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="incredibles-2.jpg" alt="Incredibles 2">
-      <h2>Incredibles 2 (2018)</h2>
-      <p>$1.242 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="inside-out.jpg" alt="Inside Out">
-      <h2>Inside Out (2015)</h2>
-      <p>$857 million</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="iron-man-3.jpg" alt="Iron Man 3">
-      <h2>Iron Man 3 (2013)</h2>
-      <p>$1.215 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="jurassic-world.jpg" alt="Jurassic World">
-      <h2>Jurassic World (2015)</h2>
-      <p>$1.671 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="jurassic-world-fallen.jpg" alt="Jurassic World: Fallen Kingdom">
-      <h2>Jurassic World: Fallen Kingdom (2018)</h2>
-      <p>$1.310 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="minions.jpg" alt="Minions">
-      <h2>Minions (2015)</h2>
-      <p>$1.159 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="rogue-one.jpg" alt="Rogue One: A Star Wars Story">
-      <h2>Rogue One: A Star Wars Story (2016)</h2>
-      <p>$1.058 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="spiderman-no-way-home.jpg" alt="Spider-Man: No Way Home">
-      <h2>Spider-Man: No Way Home (2021)</h2>
-      <p>$1.921 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="star-wars-force-awakens.jpg" alt="Star Wars: The Force Awakens">
-      <h2>Star Wars: The Force Awakens (2015)</h2>
-      <p>$2.071 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="super-mario.jpg" alt="The Super Mario Bros. Movie">
-      <h2>The Super Mario Bros. Movie (2023)</h2>
-      <p>$1.361 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="titanic.jpg" alt="Titanic">
-      <h2>Titanic (1997)</h2>
-      <p>$2.264 billion</p>
-    </div>
-
-    <div class="movie-card">
-      <img src="toy-story-4.jpg" alt="Toy Story 4">
-      <h2>Toy Story 4 (2019)</h2>
-      <p>$1.073 billion</p>
-    </div>
-
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>Data Source: Wikipedia | Built with ❤️</p>
-  </footer>
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Worldwide Gross</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Avatar</td>
+                <td>2009</td>
+                <td class="earnings">$2,923,710,708</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Avengers: Endgame</td>
+                <td>2019</td>
+                <td class="earnings">$2,797,501,328</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Avatar: The Way of Water</td>
+                <td>2022</td>
+                <td class="earnings">$2,320,250,281</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Titanic</td>
+                <td>1997</td>
+                <td class="earnings">$2,195,000,000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ne Zha 2</td>
+                <td>2025</td>
+                <td class="earnings">$1,800,000,000</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Star Wars: The Force Awakens</td>
+                <td>2015</td>
+                <td class="earnings">$2,068,223,624</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Avengers: Infinity War</td>
+                <td>2018</td>
+                <td class="earnings">$2,048,359,754</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Spider-Man: No Way Home</td>
+                <td>2021</td>
+                <td class="earnings">$1,922,598,800</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Inside Out 2</td>
+                <td>2024</td>
+                <td class="earnings">$1,698,863,816</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Jurassic World</td>
+                <td>2015</td>
+                <td class="earnings">$1,671,537,444</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Frozen II</td>
+                <td>2019</td>
+                <td class="earnings">$1,450,026,933</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Furious 7</td>
+                <td>2015</td>
+                <td class="earnings">$1,515,341,399</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Top Gun: Maverick</td>
+                <td>2022</td>
+                <td class="earnings">$1,495,696,292</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Frozen</td>
+                <td>2013</td>
+                <td class="earnings">$1,290,000,000</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Black Panther</td>
+                <td>2018</td>
+                <td class="earnings">$1,347,280,838</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Beauty and the Beast</td>
+                <td>2017</td>
+                <td class="earnings">$1,263,521,126</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Incredibles 2</td>
+                <td>2018</td>
+                <td class="earnings">$1,242,805,359</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Iron Man 3</td>
+                <td>2013</td>
+                <td class="earnings">$1,214,811,252</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Captain Marvel</td>
+                <td>2019</td>
+                <td class="earnings">$1,128,274,794</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Spider-Man: Far From Home</td>
+                <td>2019</td>
+                <td class="earnings">$1,131,927,996</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Jumanji: Welcome to the Jungle</td>
+                <td>2017</td>
+                <td class="earnings">$962,077,546</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Wonder Woman</td>
+                <td>2017</td>
+                <td class="earnings">$821,847,012</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Guardians of the Galaxy Vol. 2</td>
+                <td>2017</td>
+                <td class="earnings">$863,000,000</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Thor: Ragnarok</td>
+                <td>2017</td>
+                <td class="earnings">$850,000,000</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Deadpool 2</td>
+                <td>2018</td>
+                <td class="earnings">$785,000,000</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
