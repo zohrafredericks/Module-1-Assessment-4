@@ -1,247 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avengers Superhero App - Vertical Layout</title>
-<style>
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background: linear-gradient(135deg, #ff6f61, #ffcb61);
-    padding: 20px;
-    text-align: center;
-    font-size: 2em;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 10px 0;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    background-color: #ff6f61;
-}
-
-/* Avengers Vertical Cards */
-.avenger-card {
-    background: #fff;
-    max-width: 500px;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-.avenger-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.avenger-card h3 {
-    margin: 15px 0 10px 0;
-    color: #ff6f61;
-}
-
-.bio {
-    text-align: left;
-    padding: 0 15px;
-}
-
-.bio p {
-    margin: 5px 0;
-}
-
-/* About & Contact */
-.about, .contact {
-    max-width: 700px;
-    margin: 30px auto;
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    text-align: center;
-}
-
-.about h2, .contact h2 {
-    color: #ff6f61;
-    margin-bottom: 15px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 25 Highest Grossing Movies</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>Avengers Superhero App</header>
+  <!-- Header -->
+  <header>
+    <h1>🎬 Top 25 Highest Grossing Movies 💰</h1>
+  </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
+  <!-- Movies Grid -->
+  <section class="movie-grid">
 
-<!-- Home Section -->
-<section id="home">
-    <!-- Iron Man -->
-    <div class="avenger-card">
-        <img src="images/avengers_02.jpg" alt="Iron Man">
-        <h3>Iron Man</h3>
-        <div class="bio">
-            <p><strong>Full Name:</strong> Tony Stark</p>
-            <p><strong>Place Of Birth:</strong> Long Island, New York</p>
-            <p><strong>Alignment:</strong> Good</p>
-            <p><strong>Gender:</strong> Male</p>
-            <p><strong>Race:</strong> Human</p>
-            <p><strong>Intelligence:</strong> 100%</p>
-            <p><strong>Strength:</strong> 85%</p>
-            <p><strong>Speed:</strong> 58%</p>
-            <p><strong>Durability:</strong> 85%</p>
-            <p><strong>Power:</strong> 100%</p>
-            <p><strong>Combat:</strong> 64%</p>
-        </div>
+    <div class="movie-card">
+      <img src="avatar-2009.jpg" alt="Avatar">
+      <h2>Avatar (2009)</h2>
+      <p>$2.923 billion</p>
     </div>
 
-    <!-- Thor -->
-    <div class="avenger-card">
-        <img src="images/avengers_01.jpg" alt="Thor">
-        <h3>Thor</h3>
-        <div class="bio">
-            <p><strong>Full Name:</strong> Thor Odinson</p>
-            <p><strong>Place Of Birth:</strong> Asgard</p>
-            <p><strong>Alignment:</strong> Good</p>
-            <p><strong>Gender:</strong> Male</p>
-            <p><strong>Race:</strong> Asgardian</p>
-            <p><strong>Intelligence:</strong> 69%</p>
-            <p><strong>Strength:</strong> 100%</p>
-            <p><strong>Speed:</strong> 92%</p>
-            <p><strong>Durability:</strong> 100%</p>
-            <p><strong>Power:</strong> 100%</p>
-            <p><strong>Combat:</strong> 85%</p>
-        </div>
+    <div class="movie-card">
+      <img src="avatar-way-of-water.jpg" alt="Avatar: The Way of Water">
+      <h2>Avatar: The Way of Water (2022)</h2>
+      <p>$2.320 billion</p>
     </div>
 
-    <!-- Hulk -->
-    <div class="avenger-card">
-        <img src="images/avengers_03.jpg" alt="Hulk">
-        <h3>Hulk</h3>
-        <div class="bio">
-            <p><strong>Full Name:</strong> Bruce Banner</p>
-            <p><strong>Place Of Birth:</strong> Dayton, Ohio</p>
-            <p><strong>Alignment:</strong> Good</p>
-            <p><strong>Gender:</strong> Male</p>
-            <p><strong>Race:</strong> Human/Mutated</p>
-            <p><strong>Intelligence:</strong> 88%</p>
-            <p><strong>Strength:</strong> 100%</p>
-            <p><strong>Speed:</strong> 63%</p>
-            <p><strong>Durability:</strong> 100%</p>
-            <p><strong>Power:</strong> 98%</p>
-            <p><strong>Combat:</strong> 85%</p>
-        </div>
+    <div class="movie-card">
+      <img src="avengers-endgame.jpg" alt="Avengers: Endgame">
+      <h2>Avengers: Endgame (2019)</h2>
+      <p>$2.799 billion</p>
     </div>
 
-    <!-- Hawkeye -->
-    <div class="avenger-card">
-        <img src="images/avengers_04.jpg" alt="Hawkeye">
-        <h3>Hawkeye</h3>
-        <div class="bio">
-            <p><strong>Full Name:</strong> Clint Barton</p>
-            <p><strong>Place Of Birth:</strong> Waverly, Iowa</p>
-            <p><strong>Alignment:</strong> Good</p>
-            <p><strong>Gender:</strong> Male</p>
-            <p><strong>Race:</strong> Human</p>
-            <p><strong>Intelligence:</strong> 69%</p>
-            <p><strong>Strength:</strong> 35%</p>
-            <p><strong>Speed:</strong> 30%</p>
-            <p><strong>Durability:</strong> 55%</p>
-            <p><strong>Power:</strong> 40%</p>
-            <p><strong>Combat:</strong> 90%</p>
-        </div>
+    <div class="movie-card">
+      <img src="avengers-age-of-ultron.jpg" alt="Avengers: Age of Ultron">
+      <h2>Avengers: Age of Ultron (2015)</h2>
+      <p>$1.403 billion</p>
     </div>
 
-    <!-- Captain America -->
-    <div class="avenger-card">
-        <img src="images/avengers_05.jpg" alt="Captain America">
-        <h3>Captain America</h3>
-        <div class="bio">
-            <p><strong>Full Name:</strong> Steve Rogers</p>
-            <p><strong>Place Of Birth:</strong> Brooklyn, New York</p>
-            <p><strong>Alignment:</strong> Good</p>
-            <p><strong>Gender:</strong> Male</p>
-            <p><strong>Race:</strong> Human</p>
-            <p><strong>Intelligence:</strong> 69%</p>
-            <p><strong>Strength:</strong> 19%</p>
-            <p><strong>Speed:</strong> 38%</p>
-            <p><strong>Durability:</strong> 55%</p>
-            <p><strong>Power:</strong> 60%</p>
-            <p><strong>Combat:</strong> 100%</p>
-        </div>
+    <div class="movie-card">
+      <img src="avengers.jpg" alt="The Avengers">
+      <h2>The Avengers (2012)</h2>
+      <p>$1.520 billion</p>
     </div>
 
-    <!-- Black Widow -->
-    <div class="avenger-card">
-        <img src="images/avengers_06.jpg" alt="Black Widow">
-        <h3>Black Widow</h3>
-        <div class="bio">
-            <p><strong>Full Name:</strong> Natasha Romanoff</p>
-            <p><strong>Place Of Birth:</strong> Stalingrad</p>
-            <p><strong>Alignment:</strong> Good</p>
-            <p><strong>Gender:</strong> Female</p>
-            <p><strong>Race:</strong> Human</p>
-            <p><strong>Intelligence:</strong> 75%</p>
-            <p><strong>Strength:</strong> 15%</p>
-            <p><strong>Speed:</strong> 30%</p>
-            <p><strong>Durability:</strong> 30%</p>
-            <p><strong>Power:</strong> 36%</p>
-            <p><strong>Combat:</strong> 100%</p>
-        </div>
+    <div class="movie-card">
+      <img src="barbie.jpg" alt="Barbie">
+      <h2>Barbie (2023)</h2>
+      <p>$1.446 billion</p>
     </div>
-</section>
 
-<!-- About Section -->
-<section id="about" class="about">
-    <h2>About Us</h2>
-    <p>We are an App Development Company based in Cape Town, South Africa.</p>
-    <p>We take pride in creating amazing apps!</p>
-</section>
+    <div class="movie-card">
+      <img src="beauty-and-the-beast.jpg" alt="Beauty and the Beast">
+      <h2>Beauty and the Beast (2017)</h2>
+      <p>$1.273 billion</p>
+    </div>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: +27 689 4575</p>
-    <p>Email: appdevelopment@capetown.co.za</p>
-    <p>Address: Cape Town, South Africa</p>
-</section>
+    <div class="movie-card">
+      <img src="captain-marvel.jpg" alt="Captain Marvel">
+      <h2>Captain Marvel (2019)</h2>
+      <p>$1.131 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="disney-lion-king.jpg" alt="The Lion King">
+      <h2>The Lion King (2019)</h2>
+      <p>$1.663 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="fate-of-furious.jpg" alt="The Fate of the Furious">
+      <h2>The Fate of the Furious (2017)</h2>
+      <p>$1.238 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="frozen-2019.jpg" alt="Frozen II">
+      <h2>Frozen II (2019)</h2>
+      <p>$1.453 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="furious-7.jpg" alt="Furious 7">
+      <h2>Furious 7 (2015)</h2>
+      <p>$1.515 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="harry-potter.jpg" alt="Harry Potter and the Deathly Hallows Part 2">
+      <h2>Harry Potter and the Deathly Hallows – Part 2 (2011)</h2>
+      <p>$1.342 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="incredibles-2.jpg" alt="Incredibles 2">
+      <h2>Incredibles 2 (2018)</h2>
+      <p>$1.242 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="inside-out.jpg" alt="Inside Out">
+      <h2>Inside Out (2015)</h2>
+      <p>$857 million</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="iron-man-3.jpg" alt="Iron Man 3">
+      <h2>Iron Man 3 (2013)</h2>
+      <p>$1.215 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="jurassic-world.jpg" alt="Jurassic World">
+      <h2>Jurassic World (2015)</h2>
+      <p>$1.671 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="jurassic-world-fallen.jpg" alt="Jurassic World: Fallen Kingdom">
+      <h2>Jurassic World: Fallen Kingdom (2018)</h2>
+      <p>$1.310 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="minions.jpg" alt="Minions">
+      <h2>Minions (2015)</h2>
+      <p>$1.159 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="rogue-one.jpg" alt="Rogue One: A Star Wars Story">
+      <h2>Rogue One: A Star Wars Story (2016)</h2>
+      <p>$1.058 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="spiderman-no-way-home.jpg" alt="Spider-Man: No Way Home">
+      <h2>Spider-Man: No Way Home (2021)</h2>
+      <p>$1.921 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="star-wars-force-awakens.jpg" alt="Star Wars: The Force Awakens">
+      <h2>Star Wars: The Force Awakens (2015)</h2>
+      <p>$2.071 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="super-mario.jpg" alt="The Super Mario Bros. Movie">
+      <h2>The Super Mario Bros. Movie (2023)</h2>
+      <p>$1.361 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="titanic.jpg" alt="Titanic">
+      <h2>Titanic (1997)</h2>
+      <p>$2.264 billion</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="toy-story-4.jpg" alt="Toy Story 4">
+      <h2>Toy Story 4 (2019)</h2>
+      <p>$1.073 billion</p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Data Source: Wikipedia | Built with ❤️</p>
+  </footer>
 
 </body>
 </html>
