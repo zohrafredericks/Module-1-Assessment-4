@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +20,27 @@
         color: #2c3e50;
         text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     }
+
+    /* Navigation Buttons */
+    .nav-buttons {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .nav-buttons a {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 20px;
+        background-color: #34495e;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+    .nav-buttons a:hover {
+        background-color: #2c3e50;
+    }
+    html { scroll-behavior: smooth; }
+
     /* Gallery Styles */
     .gallery {
         display: grid;
@@ -86,8 +108,12 @@
 
 <h1>Movie Poster Gallery</h1>
 
-<div class="gallery">
-    <!-- Gallery items -->
+<div class="nav-buttons">
+    <a href="#gallery">Go to Gallery</a>
+    <a href="#top-movies">Go to Top Grossing Movies</a>
+</div>
+
+<div class="gallery" id="gallery">
     <div class="gallery-item"><img src="Avatar_(2009_film)_poster.jpg" alt="Avatar (2009)"><p>Avatar (2009)</p></div>
     <div class="gallery-item"><img src="Avatar_The_Way_of_Water_poster.jpg" alt="Avatar: The Way of Water"><p>Avatar: The Way of Water</p></div>
     <div class="gallery-item"><img src="Avengers_Age_of_Ultron_poster.jpg" alt="Avengers: Age of Ultron"><p>Avengers: Age of Ultron</p></div>
@@ -98,13 +124,13 @@
     <div class="gallery-item"><img src="Frozen_(2013_film)_poster.jpg" alt="Frozen (2013)"><p>Frozen (2013)</p></div>
     <div class="gallery-item"><img src="Frozen_II_(2019_animated_film).jpg" alt="Frozen II (2019)"><p>Frozen II (2019)</p></div>
     <div class="gallery-item"><img src="Furious_7_poster.jpg" alt="Furious 7"><p>Furious 7</p></div>
-    <div class="gallery-item"><img src="Harry_Potter_and_the_Deathly_Hallows_-_Part_2.jpg" alt="Harry Potter: Deathly Hallows Part 2"><p>Harry Potter: Deathly Hallows Part 2</p></div>
+    <div class="gallery-item"><img src="Harry_Potter_and_the_Deathly_Hallows_–_Part_2.jpg" alt="Harry Potter: Deathly Hallows Part 2"><p>Harry Potter: Deathly Hallows Part 2</p></div>
     <div class="gallery-item"><img src="Incredibles_2_(2018_animated_film).jpg" alt="Incredibles 2 (2018)"><p>Incredibles 2 (2018)</p></div>
     <div class="gallery-item"><img src="Inside_Out_2_poster.jpg" alt="Inside Out 2"><p>Inside Out 2</p></div>
     <div class="gallery-item"><img src="Jurassic_World_Fallen_Kingdom.png" alt="Jurassic World: Fallen Kingdom"><p>Jurassic World: Fallen Kingdom</p></div>
     <div class="gallery-item"><img src="Jurassic_World_poster.jpg" alt="Jurassic World"><p>Jurassic World</p></div>
     <div class="gallery-item"><img src="Minions_(2015_film).jpg" alt="Minions (2015)"><p>Minions (2015)</p></div>
-    <div class="gallery-item"><img src="Rogue_One_A_Star_Wars_Story_poster.png" alt="Rogue One: A Star Wars Story"><p>Rogue One: A Star Wars Story</p></div>
+    <div class="gallery-item"><img src="Rogue_One,_A_Star_Wars_Story_poster.png" alt="Rogue One: A Star Wars Story"><p>Rogue One: A Star Wars Story</p></div>
     <div class="gallery-item"><img src="Spider-Man_No_Way_Home_poster.jpg" alt="Spider-Man: No Way Home"><p>Spider-Man: No Way Home</p></div>
     <div class="gallery-item"><img src="Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg" alt="Star Wars: The Force Awakens"><p>Star Wars: The Force Awakens</p></div>
     <div class="gallery-item"><img src="The_Fate_of_The_Furious_Theatrical_Poster.jpg" alt="The Fate of The Furious"><p>The Fate of The Furious</p></div>
@@ -115,7 +141,7 @@
     <div class="gallery-item"><img src="Toy_Story_4_poster.jpg" alt="Toy Story 4"><p>Toy Story 4</p></div>
 </div>
 
-<h2>Top 25 Highest-Grossing Films of All Time</h2>
+<h2 id="top-movies">Top 25 Highest-Grossing Films of All Time</h2>
 
 <table>
 <thead>
